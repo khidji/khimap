@@ -1,0 +1,102 @@
+@keyframes appear {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  @keyframes disappear {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
+  
+  @keyframes k1 {
+    from {
+      transform: rotate(0) translate(0, 0);
+      box-shadow: none;
+    }
+    50% {
+      transform: translateY(1rem);
+    }
+    to {
+      transform: rotate(45deg) translate(9px, 9px);
+      box-shadow: 0 0 6px rgba(202, 228, 225, 0.92), 0 0 30px rgba(202, 228, 225, 0.34),
+        0 0 12px rgba(242, 30, 30, 0.52), 0 0 21px rgba(242, 30, 30, 0.92),
+        0 0 34px rgba(242, 30, 30, 0.78), 0 0 54px rgba(242, 30, 30, 0.92);
+    }
+  }
+  
+  @keyframes k1b {
+    from {
+      transform: rotate(0) translate(0, 0);
+      box-shadow: none;
+    }
+    50% {
+      transform: translateY(-1rem);
+    }
+    to {
+      transform: rotate(-45deg) translate(10px, -9px);
+      box-shadow: 0 0 6px rgba(202, 228, 225, 0.92), 0 0 30px rgba(202, 228, 225, 0.34),
+        0 0 12px rgba(30, 132, 242, 0.52), 0 0 21px rgba(30, 132, 242, 0.92),
+        0 0 34px rgba(30, 132, 242, 0.78), 0 0 54px rgba(30, 132, 242, 0.92);
+    }
+  }
+  
+  @keyframes k2 {
+    from {
+      transform: rotate(45deg) translate(9px, 9px);
+      box-shadow: 0 0 6px rgba(202, 228, 225, 0.92), 0 0 30px rgba(202, 228, 225, 0.34),
+        0 0 12px rgba(242, 30, 30, 0.52), 0 0 21px rgba(242, 30, 30, 0.92),
+        0 0 34px rgba(242, 30, 30, 0.78), 0 0 54px rgba(242, 30, 30, 0.92);
+    }
+    50% {
+      transform: translateY(1rem);
+    }
+    to {
+      transform: rotate(0) translate(0, 0);
+      box-shadow: none;
+    }
+  }
+  
+  @keyframes k2b {
+    from {
+      transform: rotate(-45deg) translate(10px, -9px);
+      box-shadow: 0 0 6px rgba(202, 228, 225, 0.92), 0 0 30px rgba(202, 228, 225, 0.34),
+        0 0 12px rgba(30, 132, 242, 0.52), 0 0 21px rgba(30, 132, 242, 0.92),
+        0 0 34px rgba(30, 132, 242, 0.78), 0 0 54px rgba(30, 132, 242, 0.92);
+    }
+    50% {
+      transform: translateY(-1rem);
+    }
+    to {
+      transform: rotate(0) translate(0, 0);
+      box-shadow: none;
+    }
+  }
+  
+  @keyframes slide-in {
+    from {
+      transform: translateX(-75vw);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fade {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+      pointer-events: none;
+      z-index: -12;
+    }
+  }

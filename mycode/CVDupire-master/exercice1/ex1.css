@@ -1,0 +1,161 @@
+/* ======================
+======= GLOBAL ======= 
+=========================*/
+
+h1 {
+    background-color: rgb(240, 240, 240);   
+    text-align: center;
+    padding: .5rem;
+}
+
+.conteneur_haut {
+    display: flex;
+}
+
+p {
+    line-height: 35px;
+    font-size: 17px;
+}
+
+/* ======================
+======= DIV GAUCHE ======= 
+=========================*/
+
+.div_gauche {
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+    background-color: #d4d4d4;
+    margin-right: 1rem;
+    padding: .5rem;
+    width: 30%;
+    border-top: 1px solid ;
+    border-left: 1px solid;
+    border-bottom: 1px solid;
+}
+
+.h1_gauche {
+    text-align: center;
+    background-color: rgb(240, 240, 240);   
+    border-top: 1px solid;
+    border-left: 1px solid;
+}
+
+.p_gauche {
+    margin-top: 3rem;
+}
+
+
+.p_gauche::first-letter {
+    float: left;
+    font-size: 7rem;
+    font-weight: bold;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+    padding-top: 2rem;
+}
+
+/* ======================
+======= DIV MILIEU ======= 
+=========================*/
+
+.div_milieu {
+    padding: 1rem;
+    background-color: rgb(190, 190, 190);
+    border: 2px dashed black;
+    height: fit-content;
+}
+
+.div_milieu_haut {
+    border-top: 1px solid;
+    background-color: rgb(212, 212, 212);
+}
+
+.h1_milieu_haut {
+    width: 50%;
+    margin-left: 50%;
+    transform: translate(-50%);
+    border-bottom: 1px solid ;
+}
+
+.p_milieu_haut {
+    padding: .5rem;
+}
+
+.div_milieu_bas {
+    background-color: rgb(212, 212, 212);
+    border-bottom: 1px solid;
+}
+
+.h1_milieu_bas {
+    background-color: rgb(212, 212, 212);
+    width: 25%;
+    text-align: right;
+    font-style: italic;
+    float: right;
+    padding-right: 1rem;
+}
+
+.p_milieu_bas {
+    clear: right;
+    margin-left: 50%;
+    transform: translate(-50%);
+    margin-bottom: 3rem;
+    padding: .5rem;
+    width: 66%;
+    text-align: justify;
+    border-left: solid;
+    border-right: solid;
+    line-height: 35px;
+}
+
+/* ======================
+======= DIV DROITE ======= 
+=========================*/
+
+.div_droite {
+    padding: .5rem;
+    background-color: rgb(212, 212, 212);
+    margin-left: 1rem;
+    margin-top: 1rem;
+    width: 25%;
+    height: fit-content;
+    border-top: solid 2px;
+    border-right: solid 2px;
+    border-bottom: solid 2px;
+}
+
+.h1_droite {
+    border-right: 1px solid;
+    border-bottom: 1px solid;
+
+}
+
+.p_droite {
+    text-align: right;
+}
+
+/* ======================
+======= DIV DU BAS ======= 
+=========================*/
+
+.div_bas {
+    width: 80vw;
+    margin: 0 auto;
+    margin-top: 4rem;
+    padding: .5rem;
+    background-color: rgb(212, 212, 212);
+    border-right: solid 1px black;
+    border-left: solid 1px black;
+}
+
+.titre_bas {
+    text-align: center;
+    font-style: italic;
+    background-color: rgb(240, 240, 240);
+}
+
+.p_bas {
+    margin: 0 auto;
+    text-align: center;
+    width: 50%;
+}

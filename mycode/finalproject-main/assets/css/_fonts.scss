@@ -1,0 +1,11 @@
+@font-face {
+  font-family: '#{$dw-font-family}';
+  src: url('#{$dw-font-path}/#{$dw-font-family}.eot?s3lb61');
+  src: url('#{$dw-font-path}/#{$dw-font-family}.eot?s3lb61#iefix') format('embedded-opentype'),
+    url('#{$dw-font-path}/#{$dw-font-family}.ttf?s3lb61') format('truetype'),
+    url('#{$dw-font-path}/#{$dw-font-family}.woff?s3lb61') format('woff'),
+    url('#{$dw-font-path}/#{$dw-font-family}.svg?s3lb61##{$dw-font-family}') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}

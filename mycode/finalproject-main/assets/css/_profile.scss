@@ -1,0 +1,118 @@
+@import 'variables';
+@import 'fonts';
+
+.body_profile {
+    padding: 2rem;
+    background-image: url("../images/background_3.jpg") ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.title_user {
+    padding: 1rem;
+    color: $maincolor;
+    text-align: center;
+    font-size: 3rem;
+    font-family: $font-title;
+
+}
+
+.info_user {
+    width: fit-content;
+    position: relative;
+    margin: auto;
+    height: fit-content;
+    display: flex;
+    padding: 1rem;
+    flex-wrap: wrap;
+    flex-direction: column;
+    box-shadow: 0px 10px 20px -9px rgba(0, 0, 0, 0.5);
+    border: solid rgba(58, 58, 58, 0.308) 1px ;
+    border-radius: 0.25rem;
+
+    h2 {
+        color: $third_color;
+        font-weight: bold;
+        margin: auto;
+        padding: 1rem;
+    }
+
+    p {
+        color: $text_color;
+        padding: 1rem 0 0 0;
+    }
+
+    span {
+        font-weight: bold;
+    }
+
+}
+
+.btn_profile {
+    
+    margin: 2rem 0 0 0;
+    background-color: white;
+    border: 1px solid $maincolor;
+    color: $text_color;
+    padding: 0.5rem;
+    text-transform: lowercase;
+    border-radius: .35rem;
+    transition: background-color 0.5s cubic-bezier(.43,.41,.22,.91);;
+    transition: color 0.5s cubic-bezier(.43,.41,.22,.91);;
+
+
+}
+
+.btn_profile:hover {
+    display: block;
+    width: 100%;
+    background-color: $maincolor;
+    color: $secondary_color;
+}
+
+.newpost_user {
+    padding: 1rem;
+}
+
+.posts_user {
+    padding: 2rem;
+    box-shadow: 0px 10px 20px -9px rgba(0, 0, 0, 0.5);
+    border: solid rgba(58, 58, 58, 0.308) 1px ;
+    border-radius: 0.25rem;
+    margin: 2rem auto;
+    h2 {
+        padding: .5rem;
+        font-weight: bold;
+        color: $third_color;
+    }
+
+    .element {
+        padding: .5rem;
+        margin: .5rem;
+    }
+
+    .elements {
+        columns: 3;
+    }
+}
+
+.titre_article_profile {
+    font-weight: bold;
+}
+
+.delete_account {
+    border: solid 1px red;
+    border-radius: .5rem;
+    padding: 1rem;
+    margin: auto;
+
+    a {
+        color: $text_color;
+    }
+
+    a:hover {
+        transform: scale(120%);
+    }
+    
+}

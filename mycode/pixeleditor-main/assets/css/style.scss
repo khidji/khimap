@@ -1,0 +1,113 @@
+@import './reset';
+
+@font-face {
+  font-family: 'joystix';
+  src: url('../fonts/joystix\ monospace.ttf');
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 6rem;
+  background: url('../images/bg.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  height: 100vh;
+  overflow: auto;
+}
+
+.config-form {
+  display: flex;
+  gap: 2rem;
+
+  input {
+    min-width: 14rem;
+    padding: 0.5rem;
+    font-size: 0.7rem;
+  }
+
+  input,
+  button {
+    font-family: 'joystix', Arial, Helvetica, sans-serif;
+  }
+
+  button {
+    border: 1px solid rgb(19, 200, 64);
+    padding: 0 2rem;
+    background-color: #000;
+    color: rgb(19, 200, 64);
+    transition: all 200ms ease;
+
+    &:hover {
+      background-color: rgb(19, 200, 64);
+      color: #000;
+    }
+  }
+}
+
+.row {
+  display: flex;
+}
+
+.cell {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  background-color: #888;
+}
+
+.black {
+  background-color: #000;
+}
+
+.color-picker-container {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  bottom: 0;
+  right: 0;
+  padding: 2rem;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 10px 0 0 0;
+
+  button {
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    transition: all 200ms ease;
+    border: 1px solid white;
+
+    &:hover {
+      transform: scale(1.06);
+      box-shadow: 2px 2px 8px;
+    }
+
+    &.red {
+      background-color: rgb(139, 19, 19);
+    }
+
+    &.green {
+      background-color: rgb(7, 110, 7);
+    }
+
+    &.blue {
+      background-color: rgb(21, 21, 98);
+    }
+  }
+
+  input {
+    height: 4rem;
+    width: 6rem;
+    border: none;
+    background-color: transparent;
+  }
+}
+
+@for $i from 30 to 101 {
+  .pixel-#{$i} {
+    height: #{$i}px;
+    width: #{$i}px;
+  }
+}

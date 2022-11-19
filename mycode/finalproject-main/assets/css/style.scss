@@ -1,0 +1,118 @@
+@import 'reset';
+@import 'variables';
+@import 'fonts'; 
+
+
+body {
+  font-family: $font-family;
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: 6.5rem auto 5rem;
+  grid-template-areas: 'header' 'main' 'footer';
+  scroll-behavior: smooth;
+}
+
+header { 
+  z-index: 10;
+  grid-area: header;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: $secondary_color;
+  color: $maincolor;
+  border-radius: 0 0 5px 5px;
+
+
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    flex-wrap: wrap;
+
+    ul {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+
+      li:hover{
+        color: $white;
+      }
+      
+    }
+
+    a {
+      height: 5rem;
+
+      img {
+        height: 100%;
+      }
+    }
+
+  }
+}
+
+.hamburger {
+  display: none;
+  background-color: transparent;
+  color: $white;
+  font-size: 2rem;
+  border: none;
+  cursor: pointer;
+}
+
+@media screen and (max-width : 767px){
+  .nav-ul {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    gap: 3rem;
+
+    li:hover{
+      color: $white;
+    }
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .show {
+    display: flex;
+
+
+  }
+}
+
+
+main {
+  grid-area: main;
+
+}
+
+footer {
+  @include flex(center, center);
+  grid-area: footer;
+  background-color: $secondary_color;
+  color: $maincolor;
+  padding: 2rem 4rem;
+  border-radius: 5px 5px 0 0;
+}
+
+
+@import 'signup';
+@import 'home';
+@import 'newpost';
+@import 'profile';
+
+@import 'category';
+@import 'categories';
+@import 'article';
+@import 'posts';
+@import 'admin';
+@import 'informationsperso';
+
+
+

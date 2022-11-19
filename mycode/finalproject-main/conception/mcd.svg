@@ -1,0 +1,11 @@
+COMMENTS: comment_id,  content_comment, created_at, pseudo
+answer, 11 COMMENTS, 0N POSTS
+CATEGORIES: name
+
+comment, 0N USERS, 11 COMMENTS
+POSTS: post_id, tittle, content_post, pictures, pseudo
+belongsTo, 1N POSTS, 0N CATEGORIES
+
+USERS: pseudo, email, password,	first_name, last_name, phone, address, city, country, postal_code, isadmin
+post, 0N USERS, 11 POSTS
+:
